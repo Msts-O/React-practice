@@ -1,11 +1,19 @@
-import './App.css';
-
-function App() {
-    return(
-       <div ClassName="App">
-          <h1>Marmonnant</h1>
-        </div>
-    );
+import React, {Component} from 'react';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
+import Navbar from './Components/Navbar';
+import Dashboard from "./Projects/Dashboard";
+class App extends Component{
+    render() {
+     return(
+       <BrowserRouter>
+         <div classname="App">
+            <Navbar/>
+           <Switch>
+             <Route path='/' component={Dashboard}/>
+           </Switch>
+            </div>
+        </BrowserRouter>
+     );
+    }
 }
-
 export default App;
