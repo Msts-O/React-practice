@@ -2,10 +2,10 @@ import React, { Component } from "react";
 
 class Signout extends Component{
    state={
-     email     = '',
-     password  = '',
-     firstname = '',
-     familyname= ''
+     email:  '',
+     password: '',
+     firstname: '',
+     familyname: ''
    }
     handleChange = (e) => {
         this.setState({
@@ -20,7 +20,7 @@ class Signout extends Component{
      return(
       <div className="container">
            <form onSubmit={this.handleSubmit} className="white">
-           <h5 className="grey-text text-darken-3">Sign Up</h5>
+           <h5 className="grey-text text-darken-3">Sign out</h5>
        <div className="input-field">
            <label htmlFor="email">Email</label>
            <input type="email" id="email" onChange={this.handleChange}/>
@@ -38,7 +38,7 @@ class Signout extends Component{
        <input type="text" id="lastName" onChange={this.handleChange}/>
        </div>
        <div className="input-field">
-           <button className="btn pink lighten-1 z-depth-0">Sign up</button>
+           <button className="btn pink lighten-1 z-depth-0">Sign out</button>
        </div>
        </form>
         </div>

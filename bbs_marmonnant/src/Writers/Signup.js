@@ -2,8 +2,8 @@ import  React, { Component } from 'react' ;
 
 class Signup extends Component{
     state={
-      email= '',
-      password= ''
+      email: '',
+      password: ''
     }
     handleChange = (e) => {
         this.setState({
@@ -18,7 +18,7 @@ class Signup extends Component{
       return(
        <div className ="Container">
             <form onSubmit={this.handleSubmit} className="white">
-            <h5 className="grey-text text-darken-3">Sign In</h5>
+            <h5 className="grey-text text-darken-3">Sign up</h5>
         <div className="input-field">
             <label htmlFor="email">Email</label>
             <input type="email" id="email" onChange={this.handleChange}/>
@@ -28,24 +28,10 @@ class Signup extends Component{
             <input type="password" id="password" onChange={this.handleChange}/>
         </div>
         <div className="input-field">
-            <button className="btn pink lighten-1 z-depth-0">Login</button>
+            <button className="btn pink lighten-1 z-depth-0">Sign up</button>
             </div>
             </form>
-            </div> <form onSubmit={this.handleSubmit} className="white">
-            <h5 className="grey-text text-darken-3">Sign In</h5>
-        <div className="input-field">
-            <label htmlFor="email">Email</label>
-            <input type="email" id="email" onChange={this.handleChange}/>
-        </div>
-        <div className="input-field">
-            <label htmlFor="password">Password</label>
-            <input type="password" id="password" onChange={this.handleChange}/>
-        </div>
-        <div className="input-field">
-            <button className="btn pink lighten-1 z-depth-0">Login</button>
             </div>
-            </form>
-       </div>
       )
     }
 }
