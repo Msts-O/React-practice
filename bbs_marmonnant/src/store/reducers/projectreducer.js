@@ -5,8 +5,8 @@ const initState = {
         {id: '3', title: 'egg hunt with yoshi', content: 'blah blah blah'},
     ]
 }
-const ProjectsReducer = (state = initState, action) => {
+const projectreducer = (state = initState, action) => {
     return state
 }
 
-export default ProjectsReducer
+export default projectreducer

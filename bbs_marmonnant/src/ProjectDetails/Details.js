@@ -1,5 +1,4 @@
 import React from 'react' ;
-import Summary from "./Summary";
 
 const Details = (props) => {
  const id = props.match.params.id
