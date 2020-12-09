@@ -21,7 +21,6 @@ form {
 form button, form h5 {
   margin: 20px 0;
 }
-// フォームが選択状態の時にボタンと同じ色になる設定
    input[type=text]:not(.browser-default):focus:not([readonly]),
    input[type=email]:not(.browser-default):focus:not([readonly]),
    input[type=password]:not(.browser-default):focus:not([readonly]),
