@@ -6274,6 +6274,11 @@
   "resolved" "https://registry.yarnpkg.com/ignore/-/ignore-5.1.8.tgz"
   "version" "5.1.8"
 
+"immer@5.0.0":
+  "integrity" "sha512-G7gRqKbi9NE025XVyqyTV98dxUOtdKvu/P1QRaVZfA55aEcXgjbxPdm+TlWdcSMNPKijlaHNz61DGPyelouRlA=="
+  "resolved" "https://registry.npmjs.org/immer/-/immer-5.0.0.tgz"
+  "version" "5.0.0"
+
 "immer@7.0.9":
   "integrity" "sha512-Vs/gxoM4DqNAYR7pugIxi0Xc8XAun/uy7AQu4fLLqaTBHxjOP9pJ266Q9MWA/ly4z6rAFZbvViOtihxUZ7O28A=="
   "resolved" "https://registry.yarnpkg.com/immer/-/immer-7.0.9.tgz"
@@ -10027,6 +10032,20 @@
   dependencies:
     "indent-string" "^4.0.0"
     "strip-indent" "^3.0.0"
+
+"reduce-reducers@^1.0.4":
+  "integrity" "sha512-Mb2WZ2bJF597exiqX7owBzrqJ74DHLK3yOQjCyPAaNifRncE8OD0wFIuoMhXxTnHK07+8zZ2SJEKy/qtiyR7vw=="
+  "resolved" "https://registry.npmjs.org/reduce-reducers/-/reduce-reducers-1.0.4.tgz"
+  "version" "1.0.4"
+
+"redux-firestore@^0.14.0":
+  "integrity" "sha512-/ELeYDKTl2H/cK+qLtUnKQXhGsJaa0LBerZ3rSdJfqwdf6y14HuAvI+9NxXEBbs/CZIhqAcGWDAjlGAqnHNgVg=="
+  "resolved" "https://registry.npmjs.org/redux-firestore/-/redux-firestore-0.14.0.tgz"
+  "version" "0.14.0"
+  dependencies:
+    "immer" "5.0.0"
+    "lodash" "^4.17.20"
+    "reduce-reducers" "^1.0.4"
 
 "redux-thunk@^2.3.0":
   "integrity" "sha512-km6dclyFnmcvxhAcrQV2AkZmPQjzPDjgVlQtR0EQjxZPyJ0BnMf3in1ryuR8A2qU0HldVRfxYXbFSKlI3N7Slw=="
