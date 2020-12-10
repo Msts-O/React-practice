@@ -1,10 +1,12 @@
 import writerReducer from './writerreducer'
-import projectreducer from './projectreducer'
+import projectReducer from './projectreducer'
 import { combineReducers } from 'redux'
+import { firestoreReducer } from 'redux-firestore'
 
 const rootReducer =combineReducers({
   writer:writerReducer,
-  project:projectreducer
+  project:projectReducer,
+  firestore: firestoreReducer
     })
 
 export default  rootReducer
