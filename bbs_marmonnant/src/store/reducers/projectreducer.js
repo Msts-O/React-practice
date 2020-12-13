@@ -5,7 +5,7 @@ const initState = {
         {id: '3', title: 'egg hunt with yoshi', content: 'blah blah blah'},
     ]
 }
-const projectreducer = (state = initState, action) => {
+const projectReducer = (state = initState, action) => {
     // eslint-disable-next-line
     　switch (action.type) {
          case 'CREATE_PROJECT':
@@ -19,4 +19,4 @@ const projectreducer = (state = initState, action) => {
      }
 }
 
-export default projectreducer
+export default projectReducer

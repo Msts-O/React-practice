@@ -6,12 +6,14 @@ export const createProject = (project) => {
             ...project,
            authorFirstname: 'Masa',
            authorLastname:  'Ogi',
-           authorId:12345,
+           authorId: 12345,
            createdAt: new Date()
            }).then(() =>{
-              dispatch({ type: 'CREATE_PROJECT',project})
+              dispatch({
+                  type: 'CREATE_PROJECT',project})
            }).catch((err) => {
-               dispatch({ type: 'CREATE_PROJECT_ERROR',err})
+               dispatch({
+                   type: 'CREATE_PROJECT_ERROR',err})
        })
   }
 };
