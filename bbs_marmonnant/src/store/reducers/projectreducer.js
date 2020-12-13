@@ -5,8 +5,18 @@ const initState = {
         {id: '3', title: 'egg hunt with yoshi', content: 'blah blah blah'},
     ]
 }
-const projectreducer = (state = initState, action) => {
-    return state
+const projectReducer = (state = initState, action) => {
+    // eslint-disable-next-line
+    　switch (action.type) {
+         case 'CREATE_PROJECT':
+          console.log('create_project',action.project)
+             return state;
+         case 'CREATE_PROJECT_ERROR':
+             console.log('create project error', action.err);
+             return state;
+         default:
+             return state;
+     }
 }
 
-export default projectreducer
+export default projectReducer

@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import { createProject } from "../store/actions/projectActions";
 
 class CreatingProjects  extends Component{
     state = {
@@ -37,5 +39,11 @@ class CreatingProjects  extends Component{
     }
   }
 
-  export default CreatingProjects ;
+  const mapDispatchToProps = (dispatch) => {
+    return{
+     createProject: (project) => dispatch(createProject(project))
+    }
+  }
+
+  export default connect(null, mapDispatchToProps)(CreatingProjects) ;
 
