@@ -1,23 +1,19 @@
 import React from 'react'
 import Summary from "../ProjectDetails/Summary";
+import { Link } from 'react-router-dom';
 
-const List= ( { projects } ) => {
-    return(
-     <div className="project-list section">
-        { projects && projects.map( project => {
-            return(
-             <Summary project={ project } key= {project.id}/>
-            )
+const List = ({projects}) => {
+    return (
+        <div className="list section">
+        { projects && projects.map(project => {
+            return (
+                <Link to={'/project/' + project.id} key={project.id}>
+                <Summary project={project} />
+            </Link>
+        )
         })}
-        <div className="card project-summary">
-        <div className="card-content grey-text text-darken-8">
-        <span className="card-title">Testtitle</span>
-    <p>Posted by New Articles</p>
-    <p className="grey-text"></p>
-       </div>
-        </div>
-     </div>
-    )
-}
+</div>
+     )
+  }
 
 export default List;
