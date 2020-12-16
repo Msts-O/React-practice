@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import Navbar from './Components/Navbar';
-import Dashboard from "./Projects/Dashboard";
-import Details from "./ProjectDetails/Details";
-import Signup from "./Writers/Signup";
-import Signout from "./Writers/Signout";
-import CreateProjects from "./ProjectDetails/CreateProjects";
+import Navbar from './Components/layouts/Navbar';
+import Dashboard from "./Components/Projects/Dashboard";
+import Details from "./Components/ProjectDetails/Details";
+import Signup from "./Components/Writers/Signup";
+import Signout from "./Components/Writers/Signout";
+import CreateProjects from "./Components/ProjectDetails/CreateProjects";
 import './App.css'
 
 
