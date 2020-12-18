@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
-import Navbar from './layouts/Navbar';
-import Dashboard from "./Components/Projects/Dashboard";
-import Details from "./Components/ProjectDetails/Details";
-import Signup from "./Components/Writers/Signup";
-import Signout from "./Components/Writers/Signout";
-import CreateProjects from './Components/ProjectDetails/CreateProjects';
+import Navbar from './components/layout/Navbar';
+import Dashboard from "./components/Dashboard/Dashboard";
+import Details from "./components/projects/Details";
+import SignUp from "./components/auth/SignUp";
+import CreateProjects from './components/projects/CreateProjects';
 import './App.css'
+import SignIn from "./components/auth/SignIn";
 
 
 
@@ -19,8 +19,8 @@ class App extends Component{
            <Switch>
              <Route exact path='/' component={Dashboard}/>
              <Route path='/project/:id' component={ Details }/>
-             <Route path='/signup' component={ Signup }/>
-             <Route path='/signout' component={ Signout }/>
+             <Route path='/signIn' component={ SignIn }/>
+             <Route path='/signUp' component={ SignUp }/>
              <Route path='/create' component={ CreateProjects } />
            </Switch>
         </div>

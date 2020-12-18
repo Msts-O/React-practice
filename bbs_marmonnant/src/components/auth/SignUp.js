@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { signOut } from '../../store/actions/authActions'
 
-class Signout extends Component {
+class SignUp extends Component {
     state = {
         email: '',
         password: '',
@@ -68,4 +68,4 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Signout);
+export default connect(mapStateToProps, mapDispatchToProps)(SignUp);

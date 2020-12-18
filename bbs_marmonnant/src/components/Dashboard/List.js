@@ -1,5 +1,5 @@
 import React from 'react'
-import Summary from "../ProjectDetails/Summary";
+import Summary from "../projects/Summary";
 import { Link } from 'react-router-dom';
 
 const List = ({projects}) => {

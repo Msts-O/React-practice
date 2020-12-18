@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import SignupLinks from "./SignupLinks";
-import SignoutLinks from "./SignoutLinks";
+import SignedOutLinks from "./SignedOutLinks";
+import SignedInLinks from "./SignedInLinks";
 import { connect } from 'react-redux';
 
+
 const Navbar = (props) =>{
- const { auth } =props;
- const links = auth.uid? <SignoutLinks/> : <SignupLinks/>
+ const { auth, profile } =props;
+ const links = auth.uid? <SignedInLinks profile={ profile }/> : <SignedOutLinks/>
     return(
         <nav className="nav-wrapper grey ">
           <div className="container">
