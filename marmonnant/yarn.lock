@@ -4960,9 +4960,9 @@ ignore@^5.2.0:
   version "5.2.4"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.2.4.tgz#a291c0c6178ff1b960befe47fcdec301674a6324"
 
-immer@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.npmjs.org/immer/-/immer-3.2.0.tgz"
+immer@9.0.12:
+  version "9.0.12"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-9.0.12.tgz#2d33ddf3ee1d247deab9d707ca472c8c942a0f20"
 
 immer@^9.0.7:
   version "9.0.19"
@@ -6053,11 +6053,7 @@ lodash@^3.1.0:
   version "3.10.1"
   resolved "https://registry.npmjs.org/lodash/-/lodash-3.10.1.tgz"
 
-lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20:
-  version "4.17.20"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz"
-
-lodash@^4.17.21, lodash@^4.7.0:
+lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.7.0:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
 
@@ -7549,12 +7545,12 @@ reduce-reducers@^1.0.4:
   version "1.0.4"
   resolved "https://registry.npmjs.org/reduce-reducers/-/reduce-reducers-1.0.4.tgz"
 
-redux-firestore@^0.9.0:
-  version "0.9.0"
-  resolved "https://registry.npmjs.org/redux-firestore/-/redux-firestore-0.9.0.tgz"
+redux-firestore@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/redux-firestore/-/redux-firestore-1.0.0.tgz#21d2121eaae6a6fb60588f5e04f03d6e96a5382d"
   dependencies:
-    immer "3.2.0"
-    lodash "^4.17.15"
+    immer "9.0.12"
+    lodash "^4.17.21"
     reduce-reducers "^1.0.4"
 
 redux-thunk@^2.3.0:
